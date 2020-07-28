@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="result">
+        <div>{{formula}}</div>
+    </div>
+    <div class="buttons">
+        <dx-button *ngFor="let text of textButtons" text="{{text}}" type="normal" [width]="75" [height]="70"
+            [class.doubleWidth]="text === '0'" (onClick)="click($event)">
+        </dx-button>
+    </div>
+</div>
